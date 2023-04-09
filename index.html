@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h3 id="quiz-center">Quiz Center</h5>
+      <div id="question-container1">
+        
+        <div id="question-container">
+          
+          <h3 id="h5" style="color: #FFF; margin-bottom: 100px;font-style: italic;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter your name and ID to start the quiz</h5>
+          <div id="input-div">
+            <input id="name" type="text" placeholder="enter your full name" />
+            <input
+              id="idNum"
+              type="number"
+              placeholder=" enter your id"
+              min="1000000000"
+              max="9999999999"
+            />
+          </div>
+          
+         
+          <p id="question"></p>
+          <ul id="answer-buttons">
+            <li><button class="answer-button"></button></li>
+            <li><button class="answer-button"></button></li>
+            <li><button class="answer-button"></button></li>
+            <li><button class="answer-button"></button></li>
+          </ul>
+          <button id="start-button">Start</button>
+          <button id="next-button">Next</button>
+        </div>
+        
+      </div>
+
+      <div id="quiz-container">
+        <div id="timer-container">
+          <h1 style="color: #fff; text-decoration: underline;font-style: italic;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-color: #1f1f1f">Score Center</h1>
+          <div id="user-Name">
+            <span id="user-name">Name: </span>
+            <span id="user-id">ID: </span>
+          </div>
+          <p id="timer"></p>
+          <div id="score-container">
+            <h3 id="your-score" style="color: #1f1f1f; " ;>Your Score</h2>
+            <h4 id="final-score">0</h4>
+            <h4 id="performance"></h4>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
